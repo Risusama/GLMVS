@@ -76,6 +76,8 @@ Name: OptToListing
 Desc: Sends your server info for server listing.
 -----------------------------------------------------------]]
 function OptToListing()
+	if true then return end
+	
 	if game.SinglePlayer() or GLMVS.OptOutListing then return end
 
 	local isPassworded = GetConVar("sv_password"):GetString() ~= ""
